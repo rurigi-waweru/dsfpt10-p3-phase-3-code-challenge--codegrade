@@ -59,12 +59,12 @@ Below is a visualization showing the iterations of a gradient descent algorithm 
 
 ### 1.2) Short Answer: Explain why the distances between markers get smaller over successive iterations.
 
-#### Your answer here # brianwaweru-answer-2
+#### Your answer here # brianwaweru-answer-1.2
 `The distances between the markers get smaller each time because, as gradient descent gets closer to the best value for the slope m, the changes it makes get smaller meaning it's getting closer to the lowest point on the cost curve.`
 
 ### 1.3) Short Answer: What would be the effect of decreasing the learning rate for this application of gradient descent?
 
-#### Your answer here # brianwaweru-answer-3
+#### Your answer here # brianwaweru-answer-1.3
 `If we lower the learning rate, gradient descent will move more slowly toward the ideal answer, but it will be more precise and less likely to go past it or make mistakes.`
 
 ---
