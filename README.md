@@ -49,7 +49,7 @@ where RSS is the residual sum of squares: $RSS = \sum_{i=1}^n(y_i - (mx_i + b))^
 ### 1.1) Short Answer: Explain how the RSS curve above could be used to find an optimal value for the slope parameter $m$. Your answer should provide a one sentence summary, not every step of the process.
 
 
-# Your answer here # brianwaweru-answer-1.1
+#### Your answer here # brianwaweru-answer-1.1
 `The RSS curve could be used to find the ideal value for the slope parameter m by determinign the point where the curve reaches its minimum, indicating the value of m that results in the least residual error between the predicted and actual values.`
 
 Below is a visualization showing the iterations of a gradient descent algorithm applied on the RSS curve. Each yellow marker represents an estimate, and the lines between markers represent the steps taken between estimates in each iteration. Numeric labels identify the iteration numbers.
