@@ -1,0 +1,50 @@
+---
+Q: Comparison of logistic regression to another classification model. What is one advantage and one disadvantage logistic regression has when compared with the other model?
+---
+
+---
+answer-1.1: against-random-forest
+
+Comparison of logistic regression with a more complex classification model: random forest.
+
+`Advantage of Logistic Regression over Random Forest:`
+`Interpretability` – Logistic regression provides clear insight into how each feature influences the prediction through its coefficients. This makes it highly interpretable and suitable for domains like healthcare or finance where model transparency is critical.
+
+`Disadvantage of Logistic Regression compared to Random Forest:`
+`Limited modeling of complex patterns` – Logistic regression assumes a linear relationship between input features and the log-odds of the outcome. It struggles with complex, non-linear interactions in the data, whereas random forests can model such relationships effectively due to their ensemble of decision trees.
+
+---
+
+
+---
+answer-1.2: against-decision-trees
+
+Comparison of logistic regression with a more complex classification model: Decision-Trees.
+
+`Advantage of Logistic Regression over Decision Trees:`
+`Less prone to overfitting` – Logistic regression is generally more robust to overfitting, especially on smaller datasets, because it makes strong assumptions (like linearity). In contrast, decision trees can easily overfit by memorizing the training data if not pruned or regularized.
+
+`Disadvantage of Logistic Regression compared to Decision Trees:`
+`Can't capture non-linear relationships well` – Logistic regression assumes a linear decision boundary in feature space, which limits its flexibility. Decision trees, on the other hand, can model complex, non-linear relationships and interactions between features naturally.
+---
+
+
+## Further notes
+
+1. Why do we say that logical regression is less prone to overfitting
+
+When we say that logistic regression is less prone to overfitting, it means that logistic regression tends to generalize better on new, unseen data compared to some other more complex models (like decision trees or deep neural networks), especially when the model is relatively simple.
+
+Here’s why:
+
+(i) Simple Model: Logistic regression is a linear model, meaning it makes predictions based on a linear combination of the input features. This simplicity reduces the chance of the model fitting the noise or fluctuations in the training data (which would result in overfitting).
+
+(ii) Few Parameters: In logistic regression, the model parameters (weights) are usually limited to the number of input features. So, the model has fewer parameters to tune compared to more complex models, which makes it harder for the model to overfit the training data.
+
+(iii) Regularization: Logistic regression can include regularization terms (like L1 or L2 regularization), which penalize large weights and help prevent the model from fitting the training data too closely. Regularization forces the model to focus on the most important features, reducing the risk of overfitting.
+
+(iv) Assumption of Linearity: Logistic regression assumes that the relationship between the input features and the target variable is linear. While this might be a limitation in some cases, this assumption also means that the model doesn't try to model overly complex patterns that might just be noise in the data.
+
+In contrast, models like decision trees or random forests, which can learn complex, non-linear relationships in the data, are more likely to overfit if not properly tuned (e.g., by limiting tree depth, adding pruning, etc.).
+
+To summarize, logistic regression is less prone to overfitting because of its simplicity, fewer parameters, and the option to apply regularization, which prevents it from becoming too complex and modeling noise in the data.
